@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="results.html" method="GET" enctype="multipart/form-datak">
+        <header><h1>BriefNexus Logistics Corp | Vendor Onboarding Application</h1></header>
+        <br>
+        <body>
+            <section>
+                <h2>Company Contact Details</h2>
+                <div>
+                    <label for="legal-name">Legal business name: </label>
+                    <input type="text" name="legal-name" id="legal-name" required>
+                </div>
+                <div>
+                    <label for="email">Work email (primary account holder): </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone number (direct dispatch): </label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                <div>
+                    <label for="website">Company website URL: </label>
+                    <input type="url" name="website" id="website">                    
+                </div>            
+            </section>
+            <br>
+            <section>                
+                <div>
+                    <label for="password">Create a temporary portal passcode: </label>
+                    <input type="password" name="password" id="password">
+                </div>
+            </section>
+            <br>
+            <section>
+                <h2>Operational Capacity</h2>
+                <div>
+                    <label for="founded">Year the company was founded: </label>
+                    <input type="date" name="founded" id="founded" min="1900-01-01" max="2026-12-31">
+                </div>
+                <div>
+                    <label for="fleet-size">Fleet size: </label>
+                    <input type="number" name="fleet-size" id="fleet-size" step="5" min="1">
+                </div>
+                <div>
+                    <label for="start">Earliest available contract start date: </label>
+                    <input type="date" name="start" id="start" min="2026-11-23">
+                </div>
+            </section>
+            <section>
+                <h2>Service Classification</h2>
+                <label for="structures">Business Structure: </label>
+                <div>        
+                    <label for="soleprop"><em>Sole Proprietorship</em></label>
+                    <input type="radio" name="structures" id="soleprop" value="Sole Proprietorship">
+                </div>
+                <div>
+                    <label for="llc"><em>LLC</em></label>
+                    <input type="radio" name="structures" id="llc" value="LLC">
+                </div>
+                <div>
+                    <label for="corp"><em>Corporation</em></label>
+                    <input type="radio" name="structures" id="corp" value="Corporation">
+                </div>
+                <br>
+                <label>Service Regions: </label>
+                <div>
+                    <label for="na"><em>North America</em></label>
+                    <input type="checkbox" name="na" id="na">
+                </div>
+                <div>
+                    <label for="eur"><em>Europe</em></label>
+                    <input type="checkbox" name="eur" id="eur">
+                </div>
+                <div>
+                    <label for="asia-p"><em>Asia-Pacific</em></label>
+                    <input type="checkbox" name="asia-p" id="asia-p">
+                </div>
+                <div>
+                    <label for="latin-a"><em>Latin America</em></label>
+                    <input type="checkbox" name="latin-a" id="latin-a">
+                </div>
+                <br>
+                <label>Primary Equipment: </label>                                            
+                <div>
+                    <select name="primary-eq" id="primary-eq">
+                        <option value="Standard Dry Van">Standard Dry Van</option>
+                        <option value="Refrigerated / Cold Chain">Refrigerated / Cold Chain</option>
+                        <option value="Flatbed & Heavy Haul">Flatbed & Heavy Haul</option>
+                        <option value="Hazardous Materials">Hazardous Materials</option>
+                    </select>
+                </div>
+            </section>
+            <section>
+                <h2>Compliance & Internal Tracking</h2>
+                <div>
+                    <label for="cert">Upload active liability insurance certificate: </label>
+                    <input type="file" name="cert" id="cert">
+                </div>
+                <br>
+                <div>
+                    <label for="notes">Any notes on safety certifications, special equipment or fleet details? </label>
+                    <div><textarea name="notes" id="notes"></textarea></div>
+                </div>
+                <input type="hidden" name="referral_source" value="web_portal_v2">
+            </section>
+            <br>
+            <button type="reset">RESET</button>
+            <button type="submit">SUBMIT</button>
+        </body>
+    </form>
+</body>
+</html>
