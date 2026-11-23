@@ -6,19 +6,19 @@
 
     <link rel="stylesheet" href="order.css">
 
-    <title>Document</title>
+    <title>Custom Order</title>
 </head>
 <body>
     <form action="results.html" method="GET" enctype="multipart/form-data">
-        <header><h2>Customer Sneaker Order Form</h2></header>
+        <header><h2>Custom Sneaker Order Form</h2></header>
         <main>
             <div class="input-container">
                 <label for="full-name">Full Name</label>
-                <input type="text" name="full-name" id="full-name" class="full-width-inputs">        
+                <input type="text" name="full-name" id="full-name" class="full-width-inputs" placeholder="Jane Doe">   
             </div>
             <div class="input-container">
                 <label for="email">Email Address</label>
-                <input type="email" name="email" id="email" class="full-width-inputs">
+                <input type="email" name="email" id="email" class="full-width-inputs" placeholder="jane@example.com">
             </div>
             <div class="input-container">
                 <label for="delivery-date">Preferred Delivery Date</label>
@@ -34,19 +34,19 @@
                     <input type="radio" name="sole-style" id="classic-white" value="classic-white">
                     <label for="classic-white">Classic White</label>            
                     <input type="radio" name="sole-style" id="gum-rubber" value="gum-rubber">
-                    <label for="classic-white">Gum Rubber</label>
+                    <label for="gum-rubber">Gum Rubber</label>
                     <input type="radio" name="sole-style" id="blackout" value="blackout">                   
-                    <label for="classic-white">Blackout</label>
+                    <label for="blackout">Blackout</label>
                 </div>       
             </div> 
             <div class="input-container">
                 <span>Add-ons</span>
                 <div class="options">                    
-                    <input type="checkbox" name="water-spray" id="water-spray">
+                    <input type="checkbox" name="water-spray" id="water-spray" value="true">
                     <label for="water-spray">Waterproofing Spray</label>            
-                    <input type="checkbox" name="extra-neon" id="extra-neon">
+                    <input type="checkbox" name="extra-neon" id="extra-neon" value="true">
                     <label for="extra-neon">Extra Neon Laces</label>
-                    <input type="checkbox" name="custom" id="custom">                   
+                    <input type="checkbox" name="custom" id="custom" value="true">                   
                     <label for="custom">Custom Heel Monogram</label>
                 </div>       
             </div> 
