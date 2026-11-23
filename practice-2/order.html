@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="order.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+        <header><h2>Customer Sneaker Order Form</h2></header>
+        <main>
+            <div class="input-container">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="full-name" id="full-name" class="full-width-inputs">        
+            </div>
+            <div class="input-container">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" class="full-width-inputs">
+            </div>
+            <div class="input-container">
+                <label for="delivery-date">Preferred Delivery Date</label>
+                <input type="date" name="delivery-date" id="delivery-date" class="full-width-inputs">
+            </div>
+            <div class="input-container">
+                <label for="shoe-size">Shoe Size (UK)</label>
+                <input type="number" name="shoe-size" id="shoe-size" class="full-width-inputs">
+            </div>
+            <div class="input-container">
+                <span>Sole Style</span>
+                <div class="options">                    
+                    <input type="radio" name="sole-style" id="classic-white" value="classic-white">
+                    <label for="classic-white">Classic White</label>            
+                    <input type="radio" name="sole-style" id="gum-rubber" value="gum-rubber">
+                    <label for="classic-white">Gum Rubber</label>
+                    <input type="radio" name="sole-style" id="blackout" value="blackout">                   
+                    <label for="classic-white">Blackout</label>
+                </div>       
+            </div> 
+            <div class="input-container">
+                <span>Add-ons</span>
+                <div class="options">                    
+                    <input type="checkbox" name="water-spray" id="water-spray">
+                    <label for="water-spray">Waterproofing Spray</label>            
+                    <input type="checkbox" name="extra-neon" id="extra-neon">
+                    <label for="extra-neon">Extra Neon Laces</label>
+                    <input type="checkbox" name="custom" id="custom">                   
+                    <label for="custom">Custom Heel Monogram</label>
+                </div>       
+            </div> 
+            <div class="input-container">
+                <label for="primary-colour">Primary Upper Colour</label>
+                <select name="primary-colour" id="primary-colour" class="full-width-inputs">
+                    <option value="Crimson Red">Crimson Red</option>
+                    <option value="Pacific Ocean Blue">Pacific Ocean Blue</option>
+                    <option value="Shrek Green">Shrek Green</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label for="accent-colour">Accent Stitch Colour</label>
+                <input type="color" name="accent-colour" id="accent-colour">
+            </div>
+            <div class="input-container">
+                <label for="reference">Upload Reference Sketch</label>
+                <input type="file" name="reference" id="reference" class="full-width-inputs">
+            </div>
+            <div class="input-container">
+                <label for="special">Special Fit Instructions</label>
+                <textarea name="special" id="special"></textarea>
+            </div>
+        </main>
+        <footer>
+            <button type="submit" id="submit-btn">Submit Order</button>
+            <button type="reset">Reset Form</button>
+        </footer>
+    </form>
+</body>
+</html>

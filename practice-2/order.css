@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    color: darkcyan;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+label {
+    margin-bottom: 4px;
+}
+
+.full-width-inputs {
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    height: 2em;
+}
+
+footer {
+    margin-top: 15px;
+}
+button {
+    padding: 10px 15px;
+    margin-right:6px;
+    border: none;
+    border-radius: 6px;
+}
+#submit-btn {
+    background-color: darkcyan;
+    color: white;
+}
